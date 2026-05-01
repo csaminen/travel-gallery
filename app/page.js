@@ -50,6 +50,7 @@ const albums = [
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-31.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-32.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-33.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-33%20fixed.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-34.jpg",
     ],
   },
