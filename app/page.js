@@ -36,21 +36,21 @@ const albums = [
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-17.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-18.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-19.jpg",
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-20.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-21.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-22.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-23.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-24.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-25.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-26.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-27.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-28.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-29.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-30.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-31.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-32.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-33.jpg"
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-34.jpg"
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-20.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-21.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-22.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-23.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-24.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-25.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-26.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-27.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-28.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-29.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-30.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-31.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-32.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-33.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-34.jpg",
     ],
   },
   {
