@@ -80,9 +80,6 @@ export default function TravelAlbums() {
         <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">
           My Travel Albums
         </h1>
-        <p className="mt-5 max-w-2xl text-lg leading-8 text-neutral-500">
-          A clean personal gallery to revisit favorite trips, memories, and photos anytime.
-        </p>
       </header>
 
       <main className="mx-auto max-w-6xl px-6 pb-16">
