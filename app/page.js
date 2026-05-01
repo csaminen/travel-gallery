@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Camera, MapPin } from "lucide-react";
+import { Camera, MapPin, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const albums = [
   {
@@ -79,6 +79,40 @@ const albums = [
 
 export default function TravelAlbums() {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
+  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null);
+
+  const openPhoto = (index) => {
+    setSelectedPhotoIndex(index);
+  };
+
+  const closePhoto = () => {
+    setSelectedPhotoIndex(null);
+  };
+
+  const showPreviousPhoto = (event) => {
+    event.stopPropagation();
+
+    if (!selectedAlbum || selectedPhotoIndex === null) return;
+
+    setSelectedPhotoIndex((currentIndex) =>
+      currentIndex === 0 ? selectedAlbum.photos.length - 1 : currentIndex - 1
+    );
+  };
+
+  const showNextPhoto = (event) => {
+    event.stopPropagation();
+
+    if (!selectedAlbum || selectedPhotoIndex === null) return;
+
+    setSelectedPhotoIndex((currentIndex) =>
+      currentIndex === selectedAlbum.photos.length - 1 ? 0 : currentIndex + 1
+    );
+  };
+
+  const selectedPhoto =
+    selectedAlbum && selectedPhotoIndex !== null
+      ? selectedAlbum.photos[selectedPhotoIndex]
+      : null;
 
   return (
     <div className="min-h-screen bg-white text-neutral-900">
@@ -97,7 +131,10 @@ export default function TravelAlbums() {
             {albums.map((album, index) => (
               <motion.button
                 key={album.title}
-                onClick={() => setSelectedAlbum(album)}
+                onClick={() => {
+                  setSelectedAlbum(album);
+                  setSelectedPhotoIndex(null);
+                }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.08 }}
@@ -127,35 +164,83 @@ export default function TravelAlbums() {
         ) : (
           <section>
             <button
-              onClick={() => setSelectedAlbum(null)}
+              onClick={() => {
+                setSelectedAlbum(null);
+                setSelectedPhotoIndex(null);
+              }}
               className="mb-8 rounded-full border border-neutral-200 px-5 py-2 text-sm font-medium text-neutral-600 transition hover:bg-neutral-100"
             >
               ← Back to albums
             </button>
 
-            <h2 className="text-4xl font-semibold tracking-tight">{selectedAlbum.title}</h2>
+            <h2 className="text-4xl font-semibold tracking-tight">
+              {selectedAlbum.title}
+            </h2>
             <p className="mt-2 text-neutral-500">{selectedAlbum.location}</p>
 
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {selectedAlbum.photos.map((photo, index) => (
-                <motion.div
+                <motion.button
                   key={photo}
+                  onClick={() => openPhoto(index)}
                   initial={{ opacity: 0, scale: 0.97 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: index * 0.06 }}
-                  className="overflow-hidden rounded-3xl bg-neutral-100 shadow-sm"
+                  className="overflow-hidden rounded-3xl bg-neutral-100 shadow-sm transition hover:opacity-90"
                 >
                   <img
                     src={photo}
                     alt={`${selectedAlbum.title} photo ${index + 1}`}
                     className="aspect-[4/3] h-full w-full object-cover"
                   />
-                </motion.div>
+                </motion.button>
               ))}
             </div>
           </section>
         )}
       </main>
+
+      {selectedPhoto && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4"
+          onClick={closePhoto}
+        >
+          <button
+            onClick={closePhoto}
+            className="absolute right-4 top-4 z-50 rounded-full bg-white/90 p-3 text-black shadow-lg transition hover:bg-white"
+            aria-label="Close photo"
+          >
+            <X className="h-6 w-6" />
+          </button>
+
+          <button
+            onClick={showPreviousPhoto}
+            className="absolute left-4 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/90 p-3 text-black shadow-lg transition hover:bg-white"
+            aria-label="Previous photo"
+          >
+            <ChevronLeft className="h-7 w-7" />
+          </button>
+
+          <img
+            src={selectedPhoto}
+            alt={`${selectedAlbum.title} full photo ${selectedPhotoIndex + 1}`}
+            className="max-h-[90vh] max-w-[92vw] object-contain"
+            onClick={(event) => event.stopPropagation()}
+          />
+
+          <button
+            onClick={showNextPhoto}
+            className="absolute right-4 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/90 p-3 text-black shadow-lg transition hover:bg-white"
+            aria-label="Next photo"
+          >
+            <ChevronRight className="h-7 w-7" />
+          </button>
+
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-black shadow-lg">
+            {selectedPhotoIndex + 1} / {selectedAlbum.photos.length}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
