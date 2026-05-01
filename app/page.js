@@ -53,7 +53,7 @@ const albums = [
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-34_fixed.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-35.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-36.jpg",
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-37.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-37_fixed.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-38.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-39.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-40.jpg",
