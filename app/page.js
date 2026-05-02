@@ -26,8 +26,6 @@ const albums = [
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/bay-area-2025/bay-area-2024-05.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/bay-area-2025/bay-area-2024-06.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/bay-area-2025/bay-area-2024-07.jpg",
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/bay-area-2025/bay-area-2024-08.jpg",
-      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/bay-area-2025/bay-area-2024-09.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/bay-area-2025/bay-area-2024-10.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/bay-area-2025/bay-area-2024-11.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/bay-area-2025/bay-area-2024-12.jpg",
