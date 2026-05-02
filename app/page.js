@@ -13,6 +13,17 @@ const albums = [
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-19.jpg",
     ],
   },
+
+    {
+    title: "Bay Area 2025",
+    location: "Bay Area, California",
+    cover: "https://unsplash.com/photos/a-view-of-the-golden-gate-bridge-from-the-beach-dL2du5DXHeA",
+    photos: [
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-01.jpg",
+      "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-19.jpg",
+    ],
+  },
+
   {
     title: "Hawaii 2024",
     location: "Hawaii",
