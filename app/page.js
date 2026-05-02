@@ -16,7 +16,7 @@ const albums = [
   {
     title: "Hawaii 2024",
     location: "Hawaii",
-    cover: "https://images.unsplash.com/photo-1542259009477-d625272157b7?q=80&w=1200&auto=format&fit=crop",
+    cover: "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-19.jpg",
     photos: [
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-01.jpg",
       "https://6vnb8fbok9c2cdw5.public.blob.vercel-storage.com/hawaii-2024/hawaii-2024-02.jpg",
